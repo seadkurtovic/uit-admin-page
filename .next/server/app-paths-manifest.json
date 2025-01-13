@@ -1,5 +1,4 @@
 {
-  "/api/addDoc/route": "app/api/addDoc/route.js",
   "/api/getScanData/route": "app/api/getScanData/route.js",
   "/page": "app/page.js"
 }
