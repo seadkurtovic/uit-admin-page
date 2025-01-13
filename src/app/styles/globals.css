@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #ffffff; 
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 80%; 
+  height: auto; 
+  margin-top: 10px; 
+}
+
+.rotated-image {
+  transform: rotate(90deg);
+  width: 100%;
+}
+
+/* Keyframes fÃ¼r die Hamburger-Icon-Animation */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(20px); /* Starten leicht rechts vom Icon */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Enden in ihrer normalen Position */
+  }
+}
+
+/* Klasse fÃ¼r die Animation */
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out forwards;
+}
